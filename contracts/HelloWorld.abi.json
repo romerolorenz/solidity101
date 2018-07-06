@@ -1,0 +1,119 @@
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getSenders",
+    "outputs": [
+      {
+        "name": "_senders",
+        "type": "address[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "indexOfSenders",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "SavedMessages",
+    "outputs": [
+      {
+        "name": "message",
+        "type": "string"
+      },
+      {
+        "name": "timeStamp",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getMessage",
+    "outputs": [
+      {
+        "name": "_message",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_message",
+        "type": "string"
+      }
+    ],
+    "name": "saveMessage",
+    "outputs": [
+      {
+        "name": "_success",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "_from",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "_message",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "_timeStamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "SaveMessage",
+    "type": "event"
+  }
+]
